@@ -1,0 +1,69 @@
+.header {
+  background-image: url(../assets/img/header/header-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+  background-color: rgba(96, 96, 110, 1);
+  filter: grayscale(1);
+  cursor: pointer;
+
+  &__wrapper {
+    font-family: $montserrat-bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 166px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 18px;
+
+    a {
+      color: $font-color;
+      font-size: 18px;
+    }
+  }
+
+  &__burger-menu:hover {
+    color: $accent-color;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+.breadcrumb {
+  &__list {
+    font-size: 14px;
+    display: flex;
+  }
+
+  &__item {
+    a {
+      color: $font-color;
+    }
+  }
+
+  &__item-first::after {
+    content: "/";
+    margin-right: 3px;
+  }
+}

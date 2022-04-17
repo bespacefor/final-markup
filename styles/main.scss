@@ -1,0 +1,33 @@
+@import "fonts";
+@import "variables";
+// @import "mixins";
+// @import "animation";
+@import "header";
+// @import "what-we-do";
+// @import "benefits";
+// @import "price";
+// @import "newsletter";
+// @import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $font-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: $max-width;
+  margin: 0 auto;
+}
