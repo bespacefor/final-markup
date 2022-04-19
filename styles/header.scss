@@ -1,0 +1,117 @@
+.header {
+  background-image: url(../assets/img/header/header-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+  background-color: rgba(96, 96, 110, 1);
+  filter: grayscale(0.3);
+  cursor: pointer;
+
+  &__wrapper {
+    font-family: $montserrat-bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 163px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 18px;
+
+    a {
+      color: $font-color;
+      font-size: 18px;
+
+      &:hover {
+        color: $light-color;
+        transition: 0.3s ease-out;
+      }
+    }
+  }
+
+  &__burger-menu {
+    transition: 0.3s ease-out;
+
+    &:hover {
+      color: $light-color;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      transform: rotate(180deg);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+    animation: changeColor;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+  }
+}
+
+.breadcrumb {
+  &__list {
+    font-size: 14px;
+    display: flex;
+  }
+
+  &__item {
+    &:first-child { 
+      &::after {
+        content: '/';
+        margin-right: 3px;
+      }
+
+      a {
+        display: inline-block;
+        color: $font-color;
+
+        &::after {
+          background-color: $accent-color;
+          display: block;
+          content: '';
+          height: 2px;
+          width: 0%;
+          transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::after,
+        &:focus::after {
+          width: 100%;
+        }
+        
+        &:hover {
+          color: $light-color;
+          transition: 0.3s ease-out;
+        }
+      }
+    }
+
+    &:last-child {
+      a {
+        color: $dark-color;
+        pointer-events: none;
+      }
+    }
+  }
+}

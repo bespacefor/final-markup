@@ -1,0 +1,9 @@
+@keyframes changeColor {
+    0% {
+        color: $light-color;
+    }
+
+    100% {
+        color: $dark-color;
+    }
+}

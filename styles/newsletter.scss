@@ -1,0 +1,152 @@
+.newsletter {
+    background-color: $accent-color;
+    padding: 38px 0 50px;
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media (max-width: 900px) {
+            flex-wrap: wrap-reverse;
+        }
+    }
+    
+    &__get-in-touch {
+        color: $light-color;
+        max-width: 487px;
+
+        @media (max-width: 1200px) {
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h4 {
+            font-size: 30px;
+            line-height: 48px;
+            letter-spacing: -0.4px;
+            text-transform: uppercase;
+            font-family: $montserrat-bold;
+            margin-bottom: 17px;
+
+            @media (max-width: 900px) {
+                margin-top: 25px;
+            }
+        }
+    }
+  
+    &__get-in-touch-button {
+        font-size: 14px;
+        line-height: 48px;
+        background-color: $light-color;
+        color: $accent-color;
+        border: none;
+        font-family: $montserrat-bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0 30px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        @media (max-width: 600px) {
+            margin: 0 auto;
+        }
+
+        &:hover {
+            background-color: $font-color;
+            color: $accent-color;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+        }
+    }
+  
+    &__card {
+        max-width: 554px;
+        background-color: $light-color;
+        margin-top: 13px;
+        padding: 10px 25px;
+
+        @media (max-width: 1200px) {
+            margin-top: 25px;
+        }
+
+        @media (max-width: 900px) {
+            margin-top: 0;
+        }
+    }
+
+    &__card-title {
+        font-size: 24px;
+        line-height: 38px;
+        letter-spacing: -0.7px;
+        text-transform: uppercase;
+        font-family: $montserrat-bold;
+    }
+
+    &__card-subtitle {
+        font-family: $open-sans;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    &__card-form {
+        display: flex;
+        max-width: 510px;
+        margin-top: 25px;
+        margin-bottom: 7px;
+    }
+
+    &__card-input {
+        color: $font-color;
+        width: 374px;
+        height: 52px;
+        margin-left: -5px;
+        padding-left: 20px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: none;
+        font-family: $montserrat-reg;
+        box-sizing: border-box;
+
+        &::placeholder {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #CDCDCD;
+        }
+
+        &:focus {
+            border: 1.5px solid $accent-color;
+        }
+
+        @media (max-width: 600px) {
+            width: 70%;
+        }
+    }
+
+    &__card-button {
+        font-size: 14px;
+        line-height: 49px;
+        text-transform: uppercase;
+        border: 1.5px solid $accent-color;
+        background-color: $accent-color;
+        color: $light-color;
+        font-family: $montserrat-bold;
+        text-align: center;
+        padding: 0 45px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $font-color;
+            border: 1.5px solid $font-color;
+            color: $accent-color;
+        }
+    }
+}

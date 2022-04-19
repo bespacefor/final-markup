@@ -1,0 +1,45 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "animation";
+@import "header";
+@import "what-we-do";
+@import "benefits";
+@import "price";
+@import "newsletter";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $font-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: $max-width;
+  margin: 0 auto;
+
+  @media (min-width: 900px) and (max-width: 1200px) {
+    max-width: 850px;
+  }
+
+  @media (min-width: 600px) and (max-width: 899px) {
+    max-width: 550px;
+  }
+
+  @media (max-width: 599px) {
+    max-width: 320px;
+  }
+}
