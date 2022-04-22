@@ -15,7 +15,7 @@ Optional (non-obligatory requirements, that increase your score) (max result –
 For inspecting https://psdetch.com/ can be used
 
 ## Link to :link:
-[![DEMO](https://img.shields.io/badge/-DEMO-green?style=flat)](https://bespacefor.github.io/animation/)
+[![DEMO](https://img.shields.io/badge/-DEMO-green?style=flat)](https://bespacefor.github.io/final-markup-task/)
 
 ---
 ## Deadline
